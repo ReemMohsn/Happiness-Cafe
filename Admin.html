@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" href="imges/ty.png">
+
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="imges/ty.png" alt="" class="logo">                        
+                            <img src="imges/ttt.png" alt="" class="logo">
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="imges/D7.png" alt="" class="icons">
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="imges/D9.png" alt="" class="icons">
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="imges/D11.png" alt="" class="icons">
+                        </span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="imges/D13.png" alt="" class="icons">
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="text.html">
+                        <span class="icon">
+                            <img src="imges/D15.png" alt="" class="icons">
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <img src="imges/5.png" alt="" class="icon">
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <img src="imges/search.png" alt="" class="icon">
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="imges/customer.png" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">806,23</div>
+                        <div class="cardName">total orders</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <img src="imges/D1.png" alt="" class="icon" id="icon1">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284,8</div>
+                        <div class="cardName">Products sell</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <img src="imges/D3.png" alt="" class="icon" id="icon2">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <img src="imges/D5.png" alt="" class="icon" id="icon3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Latte</td>
+                                <td>$40</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>mocha</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Black coffee</td>
+                                <td>$30</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>dount</td>
+                                <td>$62</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>iced coffee</td>
+                                <td>$12</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Cappuccino</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Maracon</td>
+                                <td>$120</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Americano</td>
+                                <td>$62</td>
+                                <td>Due</td>
+                                <td><span class="status inProgress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+
+                    <table>
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>asma <br> <span>fouah</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>reem <br> <span>diss</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>kholod <br> <span>fouah</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>asma <br> <span>diss</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>reem <br> <span>fouah</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>kholod <br> <span>diss</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>asma <br> <span>fouah</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr class="customerRow">
+                            <td width="60px">
+                                <div class="imgBx"><img src="imges/customer.png" alt="" class="profile"></div>
+                            </td>
+                            <td>
+                                <h4>reem <br> <span>diss</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="js/Admin.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

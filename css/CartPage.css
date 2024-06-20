@@ -1,0 +1,192 @@
+
+
+
+
+
+
+
+
+/* introduction ******************************************************************/
+
+
+
+.subtital{
+    padding: 1rem 5% ;
+    display: flex;
+    font-size: 4rem;
+    font-family:htl;
+    color:#F2F1F4 ;
+    padding-left: 30px;
+    margin-top: 6%;
+    justify-content: center;
+}
+
+/* headersBar ******************************************************************/
+.headersBar{
+    background-color: #713920;
+    display: grid;
+grid-template-columns: 25% 25% 16.6666667% 16.6666667% 16.6666667%;
+}
+
+.headersBar .hd{
+    color:#F2F1F4;
+    font-size: 3rem;
+    font-family:aldhabi;
+    text-align: center;
+}
+
+
+
+/* container ********************************************************************/
+.listCart .item img{
+width: 30%;
+padding: 3%;
+filter: drop-shadow(
+    0 10px 10px rgb(113, 57, 32,60%)
+);
+}
+.listCart .item .delete{
+    font-size:25px;
+    color: #F2F1F4;
+    border: 2px solid #713920;
+    border-radius: 10px;
+    /* margin: 0px 30%; */
+    padding: 3% 6%;
+    cursor: pointer;
+}
+.listCart .item  .nameconttainer .name{
+    color:#F2F1F4;
+    font-size: 2rem;
+    font-family:htl;
+}
+.listCart .item  .nameconttainer .describtion{
+    color:rgb(242, 241, 244,66%);
+    font-size: 2.5rem;
+    font-family:aldhabi;
+}
+.listCart .item .price{
+    color:#F2F1F4;
+    font-size: 2rem;
+    font-family:htl;
+}
+.listCart .item .Quantity{
+    border: 2px solid #713920;
+    border-radius: 10px;
+    margin: 0px 15%;
+    padding: 0px 7%;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.listCart .item  .Quantity span .minus , .listCart .item  .Quantity span .plus{
+    font-size: 3rem;
+cursor: pointer;
+}
+.listCart .item  span{
+    color:#F2F1F4;
+    font-size: 2rem;
+    font-family:htl;
+    display: inline-block;
+}
+.listCart .item .tottalprice{
+    color:#F2F1F4;
+    font-size: 2rem;
+    font-family:htl;
+}
+.listCart .item{
+display: grid;
+grid-template-columns: 10% 15% 25% 16.6666667% 16.6666667% 16.6666667%;
+align-items: center;
+text-align: center;
+    }
+.listCart .item:nth-child(even){
+    background-color: rgb(111, 57, 31,10%);
+}
+
+
+
+
+
+
+/* *********************************************************************** */
+.lastTotal{
+
+        background-color: #713920;
+        display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin: 0px 20px; 
+    border-radius: 20px;
+    
+}
+.lastTotal .send{
+
+    margin: 4% 20%;
+    background-color: #F2F1F4;
+    font-size: 2rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(29, 18, 12);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.lastTotal div{
+    color:#F2F1F4;
+    font-size: 3rem;
+    font-family:aldhabi;
+    text-align: center;
+}
+.lastTotal .Subtotal{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:988px){
+    html{
+        font-size: 55%;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+.header .navbar{
+    position: absolute;
+    top: 100%;right:-100%;
+    background: #713920;
+    width: 20rem;
+}
+.header .navbar.active{
+right: 0;
+}
+.header .navbar a{
+display: block;
+margin: 1.4rem;
+padding: .4rem;
+font-size: 2rem;
+}
+
+}
+@media (max-width:600px){
+    /* .Products .ProductsContener .product .PriceAdd .AddIcon{
+        margin-left: 11px;    } */
+        html{
+            font-size: 45%;
+        }
+        .cart{
+        width: 4.3rem;
+    }
+
+    .sign{
+    padding: .6rem .5rem ;
+    }
+        
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocha</title>
+    <link rel="stylesheet" href="css/Product Details.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="icon" href="imges/ty.png">
+</head>
+<body>
+  <!-- header ---------------------------------------------- -->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="imges/ty.png" alt="">
+        <img src="imges/ttt.png" alt="">
+    </a>
+
+<nav class="navbar">
+    <a href="text.html#home">Home</a>
+    <a href="text.html#Strenght">AboutUs</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Products.html">Product</a>
+    <a href="text.html#Review">Review</a>
+    <a href="text.html#contact">ContactUs</a>
+    <a href="#footer">footer</a>
+</nav>
+<div class="icons">
+   <a href="sginin.html" class="sign">
+    <img src="imges/4.png" alt="" class="signLogo">
+    Sign in
+</a>
+<a href="faivorit.html">
+    <img src="imges/123.png" alt="" class="galeb">
+</a>
+<a href="CartPage.html" class="cartcontainer">
+    <img src="imges/ii.png" alt="" class="cart">
+    <span>0</span>
+</a>
+<div><img src="imges/5.png" alt="" id="menu-btn"></div>
+</div>
+</header>
+
+    <!-- Product Details -->
+
+    <section class="ProductDetails" id="productDetails">
+
+        <div class="">
+            <img src="imges/Pattern.png" alt="pattern" class="pattern1">
+            <img src="imges/Pattern rec.png" alt="pattern" class="pattern2">
+
+            <img src="imges/Drink3.png" alt="productImge" class="productImge">
+        </div>
+        <div class="Details">
+            <div class="ProductName">
+                <p style="font-weight: lighter;">mocha</p>
+                <img src="imges/123.png" alt="" class="haret" data-id="11">
+            </div>
+            <div class="Evaluate">
+                <p><img src="imges/star.png" alt="star" class="star"> 4.0 
+                </p>
+            </div>
+            <div class="description">
+                <p class="subtital">About</p>
+                <p class="AboutDescription">the taste of coffee can vary depending on factors such as the type
+                   of beans, roast level, brewing method and the addition of any flavors or sweeteners.
+                </p>
+            </div>
+            <div class="OrderDetails">
+                <div class="Order">
+                    <p class="subtital">size</p>
+                    <div class="row">
+                        <input type="radio" name="size" id="sizeS" class="choice-input" checked value="s">
+                        <label for="sizeS" class="choice">s</label>
+                        <input type="radio" name="size" id="sizeM" class="choice-input" value="m">
+                        <label for="sizeM" class="choice">m</label>
+                        <input type="radio" name="size" id="sizeL" class="choice-input" value="l">
+                        <label for="sizeL" class="choice">l</label>
+                    </div>
+                </div>
+                <div class="Order">
+                    <p class="subtital">sugar</p>
+                    <div class="row">
+                        <input type="radio" name="sugar" id="sugarLot" class="choice-input" checked value="a lot">
+                        <label for="sugarLot" class="choice">a lot</label>
+                        <input type="radio" name="sugar" id="sugarLittle" class="choice-input" value="a little">
+                        <label for="sugarLittle" class="choice">a little</label>
+                        <input type="radio" name="sugar" id="sugarNone" class="choice-input" value="no sugar">
+                        <label for="sugarNone" class="choice">no sugar</label>
+                    </div>
+                </div>
+                <div class="Order">
+                    <p class="subtital">milk</p>
+                    <div class="row">
+                        <input type="radio" name="milk" id="withMilk" class="choice-input" checked value="with">
+                        <label for="withMilk" class="choice">with</label>
+                        <input type="radio" name="milk" id="withoutMilk" class="choice-input" value="without">
+                        <label for="withoutMilk" class="choice">without</label>
+                    </div>
+                </div>
+            </div>   
+            <div class="ProductsContener" data-id="11">
+                <div href="" class="addition AddIcon">add to cart</div>
+                <p class="price">$25.50</p>
+            </div>
+        </div>
+    </section>
+        <!-- recommanded -->
+        <section class="Menu" id="menue">
+            <div class="SubHeader">
+                <h1 style="font-weight: lighter;">You may also like</h1>
+            </div>
+            <div class="Menurow ProductsContener">
+                <div class="product">
+                    <a href="Cappuccino.html">                
+                        <img src="imges/Drink2.png" alt="productImge" class="productImge">
+                    </a>
+                    <div class="productDetails">
+                        <div class="ProductName">
+                            <p style="font-weight: lighter;">Cappuccino</p>
+                        </div>
+                        <div class="Evaluate">
+                            <p>
+                                <img src="imges/star.png" alt="star" class="star"> 4.3
+                            </p>
+                        </div>
+                        <div class="details">
+                            <p class="Volume">with oat milk</p>
+                            <p class="Volume">Volume 110 ml</p>
+                        </div>
+                        <div class="PriceAdd">
+                            <p class="price1">$15.50</p>
+                            <div data-id="10">
+                                <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="Espresso.html">                
+                        <img src="imges/Drink1.png" alt="productImge" class="productImge">
+                    </a>
+                    <div class="productDetails">
+                        <div class="ProductName">
+                            <p style="font-weight: lighter;">Espresso</p>
+                        </div>
+                        <div class="Evaluate">
+                            <p>
+                                <img src="imges/star.png" alt="star" class="star"> 4.5
+                            </p>
+                        </div>
+                        <div class="details">
+                            <p class="Volume">with oat milk</p>
+                            <p class="Volume">Volume 110 ml</p>
+                        </div>
+                        <div class="PriceAdd">
+                            <p class="price1">$10.99</p>
+                            <div data-id="9">
+                                <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="Americano.html">             
+                        <img src="imges/Drink4.png" alt="productImge" class="productImge">
+                    </a>
+                    <div class="productDetails">
+                        <div class="ProductName">
+                            <p style="font-weight: lighter;">Americano</p>
+                        </div>
+                        <div class="Evaluate">
+                            <p>
+                                <img src="imges/star.png" alt="star" class="star"> 5.0
+                            </p>
+                        </div>
+                        <div class="details">
+                            <p class="Volume">with Black coffee</p>
+                            <p class="Volume">Volume 110 ml</p>
+                        </div>
+                        <div class="PriceAdd">
+                            <p class="price1">$11.50</p>
+                            <div data-id="12">
+                                <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="Latte.html">                
+                        <img src="imges/Drink5.png" alt="productImge" class="productImge">
+                    </a>
+                    <div class="productDetails">
+                        <div class="ProductName">
+                            <p style="font-weight: lighter;">Latte</p>
+                        </div>
+                        <div class="Evaluate">
+                            <p>
+                                <img src="imges/star.png" alt="star" class="star"> 4.7
+                            </p>
+                        </div>
+                        <div class="details">
+                            <p class="Volume">with caramel</p>
+                            <p class="Volume">Volume 110 ml</p>
+                        </div>
+                        <div class="PriceAdd">
+                            <p class="price1">$17.99</p>
+                            <div data-id="13">
+                                <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footercontainer">
+            <img src="imges/52.png" alt="" class="footerbackground">
+            <img src="imges/ttt.png" alt="" class="logo2">
+                <nav class="navbar navbardowen">
+                    <a href="text.html">Home</a>
+                    <a href="text.html">AboutUs</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="Products.html">Product</a>
+                    <a href="text.html">Review</a>
+                    <a href="text.html">ContactUs</a>
+                    <a href="#footer">footer</a>
+                </nav>
+                <div class="line"></div>
+                <div class="socalMedia">
+        <a href="#"><img src="imges/53.png" alt=""></a>   
+        <a href=""><img src="imges/54.png" alt=""></a>           
+        <a href=""> <img src="imges/55.png" alt=""></a>
+        <a href=""><img src="imges/56.png" alt=""></a>            
+        <a href=""><img src="imges/57.png" alt=""></a>
+                </div>
+        </div>
+        <img src="imges/58.png" alt="" class="footerPatern1">
+        <img src="imges/59.png" alt="" class="footerPatern2">
+        <img src="imges/61.png" alt="" class="footerPatern3">
+        <img src="imges/62.png" alt="" class="footerPatern4">
+        
+        </footer>
+        <div class="hgog">© 2024 WS Project. All rights reserved.</div>
+        <script src="js/main.js"></script>
+        <script src="js/price.js"></script>
+</body>
+</html>

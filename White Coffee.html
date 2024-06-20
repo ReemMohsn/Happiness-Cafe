@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Coffee</title>
+    <link rel="stylesheet" href="css/Product Details.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="icon" href="imges/ty.png">
+    <style>
+        .ProductDetails .productImge {
+            width: 200px;
+        }
+        .Menu .Menurow .product .productImge {
+            width: 105px;
+            height: 170px;
+                }
+        
+        .Menu .Menurow .product .ProductName {
+            margin-top: 100px;
+        }
+
+        .Menu .Menurow .product {
+           padding: 20px 20px;
+        }
+
+        @media (max-width: 1030px) {
+            .ProductDetails .productImge {
+                top: 150px;
+                width: 40%;
+            }}
+    </style>
+</head>
+<body>
+   <!-- header ---------------------------------------------- -->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="imges/ty.png" alt="">
+        <img src="imges/ttt.png" alt="">
+    </a>
+
+<nav class="navbar">
+    <a href="text.html#home">Home</a>
+    <a href="text.html#Strenght">AboutUs</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Products.html">Product</a>
+    <a href="text.html#Review">Review</a>
+    <a href="text.html#contact">ContactUs</a>
+    <a href="#footer">footer</a>
+</nav>
+<div class="icons">
+   <a href="sginin.html" class="sign">
+    <img src="imges/4.png" alt="" class="signLogo">
+    Sign in
+</a>
+<a href="faivorit.html">
+    <img src="imges/123.png" alt="" class="galeb">
+</a>
+<a href="CartPage.html" class="cartcontainer">
+    <img src="imges/ii.png" alt="" class="cart">
+    <span>0</span>
+</a>
+<div><img src="imges/5.png" alt="" id="menu-btn"></div>
+</div>
+</header>
+    <!-- Product Details -->
+
+    <section class="ProductDetails" id="productDetails">
+        <div class="">
+            <img src="imges/Pattern.png" alt="pattern" class="pattern1">
+            <img src="imges/Pattern rec.png" alt="pattern" class="pattern2">
+
+            <img src="imges/Product4.png" alt="productImge" class="productImge">
+        </div>
+        <div class="Details">
+            <div class="ProductName">
+                <p style="font-weight: lighter;">white coffee</p>
+                <img src="imges/123.png" alt="" class="haret" data-id="19">
+            </div>
+            <div class="Evaluate">
+                <p><img src="imges/star.png" alt="star" class="star"> 4.5
+                </p>
+            </div>
+            <div class="description">
+                <p class="subtital">About</p>
+                <p class="AboutDescription">the taste of coffee can vary depending on factors such as the type
+                   of beans, roast level, brewing method and the addition of any flavors or sweeteners.
+                </p>
+            </div>
+            <div class="OrderDetails">
+                <div class="Order">
+                    <p class="subtital">Volume</p>
+                    <div class="row">
+                        <input type="radio" name="size" id="sizeS" class="choice-input" value="s" checked>
+                        <label for="sizeS" class="choice">500 g</label>
+                        <input type="radio" name="size" id="sizeM" class="choice-input" value="m">
+                        <label for="sizeM" class="choice">700 g</label>
+                        <input type="radio" name="size" id="sizeL" class="choice-input" value="l">
+                        <label for="sizeL" class="choice">1000 g</label>
+                    </div>
+                </div>
+            </div>
+            <div class="ProductsContener" data-id="19">  
+                <div class="addition AddIcon">add to cart</div>  
+                <p class="price">$20</p>      
+            </div>   
+        </div>   
+    </section>
+
+    <!-- recommanded -->
+    <section class="Menu" id="menue">
+        <div class="SubHeader">
+            <h1 style="font-weight: lighter;">You may also like</h1>
+        </div>
+        <div class="Menurow ProductsContener">
+            <div class="product"> 
+                <a href="Turkish Coffee.html">             
+                    <img src="imges/Product1.png" alt="productImge" class="productImge">
+                </a> 
+                <div class="productDetails">
+                    <div class="ProductName">
+                        <p style="font-weight: lighter;">turkish coffee</p>
+                    </div>
+                    <div class="Evaluate">
+                        <p>4.0 <img src="imges/star.png" alt="star" class="star">
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="Volume">Volume 500 g</p>
+                    </div>
+                    <div class="PriceAdd">
+                        <p class="price1">$29.99</p>
+                        <div data-id="2">
+                            <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"> 
+                <a href="Arabic Coffee.html">             
+                    <img src="imges/Product2.png" alt="productImge" class="productImge">
+                </a>                 
+                <div class="productDetails">
+                    <div class="ProductName">
+                        <p style="font-weight: lighter;">arabic coffee</p>
+                    </div>
+                    <div class="Evaluate">
+                        <p>4.0 <img src="imges/star.png" alt="star" class="star">
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="Volume">Volume 500 g</p>
+                    </div>
+                    <div class="PriceAdd">
+                        <p class="price1">$29.99</p>
+                        <div data-id="3">
+                            <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="product"> 
+                <a href="Sweet Coffee.html">                
+                    <img src="imges/Product3.png" alt="productImge" class="productImge">
+                </a>                <div class="productDetails">
+                    <div class="ProductName">
+                        <p style="font-weight: lighter;">sweet coffee</p>
+                    </div>
+                    <div class="Evaluate">
+                        <p>4.0 <img src="imges/star.png" alt="star" class="star">
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="Volume">Volume 500 g</p>
+                    </div>
+                    <div class="PriceAdd">
+                        <p class="price1">$29.99</p>
+                        <div data-id="1">
+                            <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="product"> 
+                <a href="Roasted Coffee.html">                
+                    <img src="imges/Product5.png" alt="productImge" class="productImge">
+                </a>                
+                <div class="productDetails">
+                    <div class="ProductName">
+                        <p style="font-weight: lighter;">roasted coffee</p>
+                    </div>
+                    <div class="Evaluate">
+                        <p>4.3 <img src="imges/star.png" alt="star" class="star">
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="Volume">Volume 500 g</p>
+                    </div>
+                    <div class="PriceAdd">
+                        <p class="price1">$29.99</p>
+                        <div data-id="20">
+                            <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"> 
+                <a href="Black Coffee.html">                
+                    <img src="imges/Product6.png" alt="productImge" class="productImge">
+                </a>                
+                <div class="productDetails">
+                    <div class="ProductName">
+                        <p style="font-weight: lighter;">black coffee</p>
+                    </div>
+                    <div class="Evaluate">
+                        <p>4.0 <img src="imges/star.png" alt="star" class="star">
+                        </p>
+                    </div>
+                    <div class="details">
+                        <p class="Volume">Volume 500 g</p>
+                    </div>
+                    <div class="PriceAdd">
+                        <p class="price1">$29.99</p>
+                        <div data-id="21">
+                            <img src="imges/add.png" alt="AddIcon" class="AddIcon addition">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footercontainer">
+            <img src="imges/52.png" alt="" class="footerbackground">
+            <img src="imges/ttt.png" alt="" class="logo2">
+                <nav class="navbar navbardowen">
+                    <a href="text.html">Home</a>
+                    <a href="text.html">AboutUs</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="Products.html">Product</a>
+                    <a href="text.html">Review</a>
+                    <a href="text.html">ContactUs</a>
+                    <a href="#footer">footer</a>
+                </nav>
+                <div class="line"></div>
+                <div class="socalMedia">
+        <a href="#"><img src="imges/53.png" alt=""></a>   
+        <a href=""><img src="imges/54.png" alt=""></a>           
+        <a href=""> <img src="imges/55.png" alt=""></a>
+        <a href=""><img src="imges/56.png" alt=""></a>            
+        <a href=""><img src="imges/57.png" alt=""></a>
+                </div>
+        </div>
+        <img src="imges/58.png" alt="" class="footerPatern1">
+        <img src="imges/59.png" alt="" class="footerPatern2">
+        <img src="imges/61.png" alt="" class="footerPatern3">
+        <img src="imges/62.png" alt="" class="footerPatern4">
+        
+        </footer>
+        <div class="hgog">© 2024 WS Project. All rights reserved.</div>
+        <script src="js/main.js"></script>
+        <script src="js/price.js"></script>
+
+</body>
+</html>

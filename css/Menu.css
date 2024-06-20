@@ -1,0 +1,164 @@
+
+ /* page content */
+.title{
+    text-align: center;
+    font-size: 5rem;
+    color: #F2F1F4;
+    font-family: htl;
+    margin-top: 6%;
+}
+
+.SubHeader{
+    color: #F2F1F4;
+    font-family: htl;
+    font-size: 3rem;
+    margin-left: 35px;
+}
+
+/* menu item */
+.Menu .pattern1 {
+    position: absolute;
+    width: 170px;
+    left: 0px;
+    top: 0px;
+    bottom: -18px;
+    z-index: 1; /* Add this to place the pattern behind the products */
+}
+
+.Menu .pattern2 {
+    position: absolute;
+    right: 0px;
+    width: 170px;
+    top: 0px;
+    z-index: 1; /* Add this to place the pattern behind the products */
+}
+.Menu {
+    /* align-items: flex-start; */
+    background-image: linear-gradient(to top, #1D120C 30%, #723A1F 30%, #723A1F 60%, #1D120C 60%);
+    padding: 20px 0px;
+    position: relative;
+}
+
+.ProductsContener {
+    display: flex;
+    padding: 100px 50px;
+    justify-content: start; /* Align products to the start of the row */
+    overflow-x: auto; /* Add horizontal scrolling */
+    white-space: nowrap; /* Prevent products from wrapping */
+    -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
+    position: relative; /* Add this to allow the z-index to work */
+    z-index: 2; 
+}
+
+.ProductsContener::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for Chrome/Safari */
+}
+
+.Menu .ProductsContener .product {
+    flex: 0 0 auto; /* Prevent products from shrinking */
+    margin: 0 40px; /* Add horizontal margin between products */
+    background-color: black;
+    height: 300px;
+    width: 210px;
+    border: .8px solid #b16e25;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 25px;
+    border-radius: 70px;
+    box-shadow: 0px 2px 6px 0px rgb(177, 110, 37,98%);
+}
+
+.Menu .ProductsContener .product .productDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.Menu .ProductsContener .product .ProductName {
+    margin-top: 80px;
+    font-size: 2.3rem;
+    color: #F2F1F4;
+    align-self: center;
+    font-family: htl;
+}
+
+.Menu .ProductsContener .product .Evaluate {
+    background-color: #723A1F;
+    color: #F2F1F4;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 1px 8px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.Menu .ProductsContener .product .Evaluate .star {
+    width: 14px;
+    margin-top: 3px;
+}
+
+.Menu .ProductsContener .product .details {
+    color: #F2F1F4;
+    font-family: aldhabi;
+    font-size: 2.7rem;
+    line-height: 0.8;
+    margin: 3px 2px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Menu .ProductsContener .product .details .Volume {
+    opacity: 70%;
+    font-size: 3.2rem;
+}
+
+.Menu .ProductsContener .product .PriceAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Menu .ProductsContener .product .PriceAdd .price1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: #F2F1F4;
+}
+
+.Menu .ProductsContener .product .PriceAdd .AddIcon {
+    width: 50px;
+}
+
+.Menu .ProductsContener .product .productImge{
+    width: 150px;
+    align-self: center;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(
+        0px 2px 2px  rgb(177, 110, 37,90%)
+    );}
+
+.Menu .ProductsContener .product .productImge:hover {
+    transform: scale(1.1, 1.1) translateX(-45%);
+    top: -70px;
+    transition: .5s ease;
+}
+
+.Menu .ProductsContener .product .PriceAdd .AddIcon:hover {
+    transform: scale(1.3, 1.3);
+    transition: .3s ease;
+}
+
+
+
+

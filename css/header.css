@@ -1,0 +1,266 @@
+ /* for all the page ******************************************************************/
+@font-face {
+    src: url(../fonts/BodoniModa_72pt-Regular.ttf);
+    font-family:htl;
+}
+@font-face {
+    src: url(../fonts/aldhabi-cufonfonts/aldhabi.ttf);
+    font-family:aldhabi;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+ body{
+    background: rgb(29, 18, 12);
+
+ }  
+
+
+ 
+ /* header ******************************************************************/
+
+ .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6% ;
+    position: fixed;
+    top: 0;left: 0;right:0;
+    z-index: 1000;
+    transition: 0.5s;
+ } 
+ .header.shadow{
+     background:rgb(29, 18, 12);
+     box-shadow:0 0 44px rgb(14 55 54 / 15%);
+}
+.header .logo img{
+    height: 2.8rem;
+}
+.navbar{
+    text-align: center;
+    /* margin: 0px 35px; */
+}
+.navbar a{
+    margin:0 1rem ;
+font-size: 2.8rem;
+color: rgb(255, 255, 255,70%);
+font-family:aldhabi;
+}
+.navbar a:hover{
+color: rgb(255, 255, 255);
+border-bottom: .1rem solid white;
+padding-bottom: .3rem;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+.header .icons a .galeb{
+    width: 2.5rem;
+    margin-left: .8rem;
+    opacity: 70%;
+}
+.header .icons a .galeb:hover{
+    opacity: 100%;
+}
+.header .icons a  .signLogo{
+    width: 1.3rem;
+    margin-right: .5rem;
+}
+.sign{
+    background-color: #71381E;
+color: white;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+padding: .4rem 1rem ;
+border-radius: 20px;
+}
+.sign:hover{
+    color : #71381E;
+    background-color : white;
+}
+.cart{
+    width: 3.5rem;
+    margin-left: .8rem;
+    opacity: 70%;
+}
+.cartcontainer{
+    position: relative;
+}
+.cartcontainer span{
+    position: absolute;
+    top:50%;
+    right: -2px;
+    width: 20px;
+height: 20px;
+color: white;
+border-radius: 50%;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#menu-btn{
+    width: 1.8rem;
+    margin-left: .8rem;
+    opacity: 70%;
+    display: none;
+    cursor: pointer;
+}
+#menu-btn:hover{
+
+    opacity: 100%;
+}
+.cart:hover{
+    opacity: 100%;
+
+}
+
+
+/* footer ***************************************************/
+.footer{
+    position: relative;
+}
+.footer .footerbackground{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer .logo2{
+    margin: 100px 0px 15px;
+    width:160px;
+}
+.footer .footercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    position: relative;
+    padding: 0px 50px;
+}
+
+.footer .footercontainer .line{
+    margin-bottom: 20px;
+    width: 280px;
+height: .5px;
+background-color: rgb(255, 255, 255,70%);
+}
+
+
+.footer .footercontainer .socalMedia img{
+    width: 35px;
+    margin: 5px 2px 9px;
+    opacity: 70%;
+}
+.footer .footercontainer .socalMedia img:hover{
+    opacity: 100%;
+}
+.footer .footerPatern1{
+    position: absolute;
+    bottom: -30px;
+    right:0px;
+    width: 110px;
+}
+.footer .footerPatern2{
+    position: absolute;
+    bottom: -30px;
+    left:0px;
+    width: 140px;
+}
+.footer .footerPatern3{
+    position: absolute;
+    bottom: -30px;
+    left:0px;
+    width: 70px;
+    display: none;
+}
+.footer .footerPatern4{
+    position: absolute;
+    bottom: -30px;
+    right:0px;
+    width: 75px;
+    display: none;
+
+}
+
+
+.hgog{
+    display: flex;
+    margin: 7px;
+    justify-content: center;
+    color: rgb(242, 241, 244,66%);
+    font-size: 1.5rem;
+}
+
+@media (max-width:988px){
+    html{
+        font-size: 55%;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+.header .navbar{
+    position: absolute;
+    top: 100%;right:-100%;
+    background: #713920;
+    width: 20rem;
+}
+.header .navbar.active{
+right: 0;
+}
+.header .navbar a{
+display: block;
+margin: 1.4rem;
+padding: .4rem;
+font-size: 2rem;
+}
+}
+@media (max-width:600px){
+    .cart{
+        width: 4.3rem;
+    }
+    .header .logo img{
+        height: 3.3rem;
+    }
+    .header .icons a  .signLogo{
+        width: 2rem;
+    }
+    .sign{
+    padding: .6rem .5rem ;
+    }
+    html{
+        font-size: 45%;
+    }
+    .footer .footerPatern1{
+        display: none;
+        }
+        .footer .footerPatern2{
+            display: none;
+            }
+            .footer .footerPatern3{
+                display: inline-block;
+                }
+                .footer .footerPatern4{
+                    display: inline-block;
+                    }
+                    .footer .footercontainer .socalMedia img{
+                        width: 30px;
+                        margin: 5px 2px ;
+                    }
+}

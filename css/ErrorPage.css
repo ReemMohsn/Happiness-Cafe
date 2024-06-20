@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+     flex-wrap: nowrap;
+    margin-top: 60px;
+    /* position: relative; */
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     align-items: center;
+    justify-content: center;
+    margin-left: 20% ;
+}
+.text .tital{
+font-size: 11rem;
+color: #F2F1F4;
+font-family:htl;
+}
+
+.text .tital1{
+    font-size: 2.5rem;
+    color: #F2F1F4;
+    /* font-family:aldhabi; */
+    }
+    .text .tital2{
+        font-size: 2rem;
+        color: rgb(242, 241, 244,70%);
+        /* font-family:aldhabi; */
+        }
+
+.container  img{
+    width: 400px;
+    height: 510px;
+margin-right: 3%;
+}
+
+.container .text a{
+    margin:15px;
+    background-color:#713920 ;
+    font-size: 2rem;
+    padding:8px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#F2F1F4 ;
+    border-radius: 30px;
+    cursor: pointer;
+}

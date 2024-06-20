@@ -1,0 +1,1028 @@
+body{
+    position: relative;
+}
+:root{
+
+    --transition-3: 1000ms ease;
+    --background:#713a20;
+    --text:#ffffff;
+    --text-low:hsl(0%,0%, 0%, 65%);
+    
+ }
+
+
+/* sgin up */
+.sgin-up
+{
+    background: url(../imges/back.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+}
+ .patt-left
+{
+    display: block;
+    width: 90px;
+    position: absolute;
+    top: -20px;left: 0px;
+}
+ .patt-right
+{
+    display: block;
+    width: 110px;
+    position: absolute;
+    top: -20px;right: 0px;
+}
+
+.sgin-up .contener
+{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 140px;
+}
+.sgin-up .contener .form-signup
+{
+    width: 700px;
+    margin-left: 13%;
+    background-color: #71381e17;
+    box-shadow: 2px 2px 30px 25px #71381e17 ;
+}
+.sgin-up .contener .form-signup .title
+{
+    margin: 20px;
+    font-family: htl;
+    font-size: 5.5rem;
+    color: var(--text);
+}
+.sgin-up .contener .form-signup form
+{ 
+    margin-top: 60px;
+}
+.sgin-up .contener .form-signup form .input-group
+{
+    width: 80%;
+    margin: 6px auto;
+
+}
+form .input-group .input-field 
+{
+    width: 90%;
+    background:none;
+    margin: 15px;
+    border-bottom: solid 2px var(--background);
+    display: flex;
+    align-items: center;
+    max-height: 55px;
+    transition:max-height 0.5s ;
+    overflow: visible;  
+}
+form .input-group .input-field input
+{
+    width: 100%;
+    color: var(--text) ;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 8px;
+
+}
+form .input-group .input-field img
+{
+    margin-left: 7px
+}
+input::placeholder
+{
+    color:var(--text);
+    font-family:aldhabi ;
+    font-size: 3rem;
+    opacity: 65%;
+}
+.input-group .submit
+{
+    background: var(--background);
+    opacity: 90%;
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 23px; 
+    text-align: center;
+}
+.submit a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+.submit:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+.submit a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+.div1
+{
+    width: 100%;
+    max-height:200px ;
+    margin:30px 15px 0 15px;
+    transition:max-height 1s ;
+    overflow: hidden;
+}
+.divider
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text);
+    gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+.divider_line
+{
+    width: 100%;
+    height: 2px;
+    background: var(--background);
+    opacity: .9;
+}
+.iconss
+{
+text-align: center
+;
+}
+.iconss a img
+{
+    margin: 15px 5px;
+}
+.iconss a img:hover
+{
+    width: 45px;height: 43px;
+}
+.div1 p
+{
+    margin-top: 15px;
+    font-size: 2rem;
+    color: var(--text) ;
+    opacity: 70%;
+    position: relative;
+    left: 50px;
+}
+.div1 p a
+{
+    color: var(--background);
+    opacity: 100%;
+}
+.div1 p a:hover{
+    color:var(--background);
+    opacity: 70%;
+    font-weight:bold ;
+    border-bottom: solid 1px white;
+}
+
+
+.sgin-up .contener .cup
+{
+    display: block;
+    width: 220px;
+    height: 360px;
+    margin-top: 70px;
+
+}
+/* /////////////// */
+/* google */
+#myinterface1
+{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+#mypopup1
+{
+    display: none;
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35%;height: 95%;
+    background-color:#1d120c;
+    box-shadow: 4px 4px 20px 300px #4b2f2193 inset ;
+    opacity: 90%;
+    color: white;
+    padding-top:10px ;
+    /* padding: 50px; */
+    z-index: 2;
+}
+/* #mypopup1
+{
+    display: flex;
+    flex-direction: column;
+} */
+#mypopup1 .popup1
+{
+    display: flex;
+    flex-direction: column;
+}
+#mypopup1 .popup1 img
+{
+    display: block;
+    margin: auto;
+}
+#mypopup1 .popup1 div
+{
+    width: 90%;
+    margin: auto;
+    font-family: htl;
+    font-size: 3.8rem;
+    color: var(--text);
+    position: relative;
+    left: 35px;top: 10px;
+}
+#mypopup1 .popup1 p
+{
+    width: 70%;
+    margin: auto;
+    font-family: htl;
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.623);
+    position: relative;
+    top: 20px;left: 17px;
+}
+#mypopup1 .popup1 p span img
+{
+    display: block;
+    position: relative;
+    top: -17px;left: 35px;
+}
+#mypopup1 .popup2
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#mypopup1 .popup2 .popup2-account
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 2px var(--background);
+    margin: 8px;
+}
+#mypopup1 .popup2 .popup2-account a .popup2-account-img
+{
+    width: 40px;height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    margin-right: 12px;
+    font-size: 2.5rem;
+    font-family: htl;
+    color: white;
+
+}
+#mypopup1 .popup2 .popup2-account a .img-p1
+{
+    background: rgb(226, 104, 104);
+}
+#mypopup1 .popup2 .popup2-account a .img-p2
+{
+    background: rgb(65, 105, 165);
+}
+#mypopup1 .popup2 .popup2-account .popup2-account-email
+{
+    line-height: 2.1rem;
+    position: relative;
+    top: -1px;
+}
+#mypopup1 .popup2 .popup2-account .popup2-account-email .p1-email
+{
+    font-size: 2.6rem;
+    font-family: aldhabi;
+    color: white;
+}
+#mypopup1 .popup2 .popup2-account .popup2-account-email .p2-email
+{
+    font-size: 2rem;
+    font-family: aldhabi;
+    color: rgba(255, 255, 255, 0.623);
+}
+#mypopup1 .popup2 .popup2-account img
+{
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#mypopup1 .popup2 .popup2-account .popup2-account-email .p11-email
+{
+    position: relative;
+    top: 10px;left: 5px;
+}
+#mypopup1 .popup3
+{ 
+    padding-top: 30px;
+    padding-left: 10px;
+    width: 75%;
+    margin: auto ;
+    line-height: 2rem;
+    text-align: start;
+    font-size: 2rem;
+    font-family: aldhabi;
+    color: rgba(255, 255, 255, 0.623);
+}
+#mypopup1 .popup3 span img
+{
+    display: block;
+    position: relative;
+    left: 120px;top: -20px;
+}
+#mypopup1 .popup3 .span 
+{
+    display: block;
+    position: relative;
+    ;top: -20px;
+}
+#mypopup1 .submit1-in
+{
+    background: #713a209c;
+    opacity: 90%;
+    width: 30%;
+    height: 34px;
+    margin-top: 10px;
+    position: relative;
+    left: 140px;
+}
+#mypopup1 .submit1-in a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    left: 26px;top: -14px;  
+ }
+ #mypopup1 .submit1-in:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+#mypopup1 .submit1-in a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////// */
+/* sign in */
+.sgin-in
+{
+    background: url(../imges/backin.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+}
+
+ .pat-left
+{
+    width: 160px;
+    position: absolute;
+    top: 0px;left:0px;
+}
+ .pat-right
+{
+    width: 140px;
+    position: absolute;
+    top: 0px;right: 0px;
+}
+
+.sgin-in .contener .form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.sgin-in .contener
+{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* position: relative;
+    left: 15%; */
+    margin-left: 15%;
+}
+.sgin-in .contener .form-signup .title
+{
+    margin-top: 20px;
+    font-family: htl;
+    font-size: 5.5rem;
+    color: var(--text);
+    font-weight: normal;
+    text-align: center;
+}
+.sgin-in .contener .form-signup .title span
+{
+    position: relative;
+    left: 253px;top: -70px;
+}
+
+.sgin-in .contener .form-signup form .input-group
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.sgin-in .contener .form-signup form .input-group .input-field 
+{
+    width: 100%;
+    background:none;
+    border-bottom: solid 2px var(--background);
+    display: flex;
+    align-items: center;
+    transition:max-height 0.5s ;
+    overflow: visible;  
+}
+.sgin-in .contener .form-signup form .input-group .input-field input
+{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--text) ;
+    padding: 18px 8px;
+
+}
+.sgin-in .contener .form-signup form .input-group .input-field img
+{
+    margin-left: 7px
+}
+.sgin-in .contener .form-signup form .input-group .input-field input::placeholder
+{
+    color:var(--text);
+    font-family:aldhabi ;
+    font-size: 3.3rem;
+    opacity: 65%;
+}
+
+
+.sgin-in .contener .form-signup form .input-group .pra1-in
+{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--text) ;
+    opacity: 90%;
+    position: relative;
+    left: 85px;
+}
+.sgin-in .contener .form-signup form .input-group .pra1-in a
+{
+    color: var(--background);
+    opacity: 100%;
+}
+.input-group .pra1-in a:hover{
+    color:var(--background);
+    opacity: 70%;
+    font-weight:bold ;
+    border-bottom: solid 1px white;
+}
+.input-group .submit1-in
+{
+    background: #713a209c;
+    opacity: 90%;
+    width: 70%;
+    height: 40px;
+    margin: auto ;
+    margin-top: 20px;
+    border-radius: 23px; 
+    position: relative;
+    left: 25px;
+}
+.submit1-in a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    left: 90px;top: -9px;  
+}
+.submit1-in:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+.submit1-in a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+.input-group .pra2-in
+{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--text) ;
+    opacity: 90%;
+    position: relative;
+    left: 125px;
+}
+.input-group .submit2-in
+{
+    background:#713a20b0;
+    opacity: 90%;
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 23px; 
+    position: relative;
+    left: 30px;top: -10px;
+}
+.submit2-in a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    left: 55px;top: -9px;  
+}
+.submit2-in:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+.submit2-in a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+
+.sgin-in .contener .cup-in
+{
+    width: 520px;
+    height: 320px;
+margin-top: 50px;
+}
+/* ////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+/* forgot */
+
+.sgin-in .contener .form-signup .form-for .input-group
+{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.sgin-in .contener .form-signup .form-for .input-group .input-field 
+{
+    width: 90%;
+    background:none;
+    margin: 20px;
+    border-bottom: solid 2px var(--background);
+    display: flex;
+    align-items: center;
+    max-height: 55px;
+    transition:max-height 0.5s ;
+    overflow: visible;  
+}
+.sgin-in .contener .form-signup .form-for .input-group .input-field input
+{
+    width: 100%;
+    background: transparent;
+    color: var(--text) ;
+    border: 0;
+    outline: 0;
+    padding: 18px ;
+
+}
+
+.sgin-in .contener .form-signup .form-for .input-group .input-field input::placeholder
+{
+    color:var(--text);
+    font-family:aldhabi ;
+    font-size: 3.3rem;
+    opacity: 65%;
+}
+
+
+
+.sgin-in .contener .form-signup .form-for .input-group .submit1-in
+{
+    background: #713a209c;
+    opacity: 90%;
+    width: 70%;
+    height: 40px;
+    margin: auto ;
+    margin-top: 50px;
+    border-radius: 23px; 
+    position: relative;
+    left: 8px;
+}
+.sgin-in .contener .form-signup .form-for .input-group .submit1-in a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    left: 90px;top: -9px;  
+}
+.sgin-in .contener .form-signup .form-for .input-group .submit1-in:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+.sgin-in .contener .form-signup .form-for .input-group .submit1-in a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+.sgin-in .contener .form-signup .form-for .input-group .pra1-in
+{
+    width: 270px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: var(--text) ;
+    opacity: 90%;
+    text-align: center;
+
+}
+.sgin-in .contener .form-signup .form-for .input-group .pra1-in a
+{
+    color: var(--background);
+    opacity: 100%;
+}
+.sgin-in .contener .form-signup .form-for .input-group .pra1-in a:hover{
+    color:var(--background);
+    opacity: 70%;
+    font-weight:bold ;
+    border-bottom: solid 1px white;
+}
+#myinterface
+{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+#mypopup
+{
+    display: none;
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;height: 70%;
+    background-color:#1d120c;
+    box-shadow: 4px 4px 20px 300px #4b2f2193 inset ;
+    opacity: 90%;
+    color: white;
+    padding: 40px;
+    z-index: 2;
+}
+#mypopup .title
+{
+    margin-left: 55px ;
+    font-family: htl;
+    font-size: 4rem;
+    color: var(--text);
+}
+#mypopup form 
+{
+    width: 80%;
+    margin-left:70px ;
+    margin-top: 40px;
+}
+#mypopup form .input-field
+{
+    width: 80%;
+    background:none;
+    margin: 20px;
+    border-bottom: solid 2px var(--background);
+    display: flex;
+    align-items: center;
+    max-height: 55px;
+    transition:max-height 0.5s ;
+    overflow: visible;   
+}
+#mypopup form .input-field img
+{
+    margin-left: 7px;
+}
+#mypopup form .input-field input
+{
+    width: 90%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 8px;
+    color: var(--text) ;
+
+}
+#mypopup form .submit1-in
+{
+    background: #713a209c;
+    opacity: 90%;
+    width: 40%;
+    height: 40px;
+    margin-left: 60px ;
+    margin-top: 50px;
+    border-radius: 23px; 
+    position: relative;
+    left: 60px;
+}
+#mypopup form .submit1-in a
+{
+    display:inline-block;
+    color: var(--text);
+    opacity: 80%;
+    font-size: 3.5rem;
+    font-family:aldhabi ;
+    position: relative;
+    left: 70px;top: -9px;  
+ }
+ #mypopup form .submit1-in:hover
+{
+    background: var(--background);
+    opacity: 95%;
+    border: solid .8px var(--text);
+}
+#mypopup form .submit1-in a:hover
+{
+    color: var(--text);
+    opacity: 100%;
+}
+
+
+
+/* ////////////////////////////////////// */
+/* verify */
+.contener-verify
+{
+    width: 75%;
+    background-color: #71381e17;
+    box-shadow: 2px 2px 30px 25px #71381e17 ;
+    margin-top: 90px;
+    display: flex;
+justify-content: space-between;
+    margin-left: 10%;
+}
+
+
+.contener-verify .form-verify .title
+{
+    font-family: htl;
+    font-size: 5.5rem;
+    color: var(--text);
+} 
+.contener-verify .form-verify form
+{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contener-verify .form-verify form div
+{
+    width: 50%;
+    margin-top: 40px;
+    font-size: 3rem;
+    color: var(--text) ;
+    font-family:aldhabi ;
+    line-height: 2.3rem;
+    opacity: 70%;
+}
+.input-field-verify label
+{
+    font-size: 4.5rem;
+    color: var(--text) ;
+    font-family:aldhabi ;
+    opacity: 100%;
+}
+.input-field-verify input
+{
+    width: 280px;
+    background: none;
+    border-bottom: solid 2px var(--background);
+    padding: 15px 0 ;
+    text-transform: lowercase;
+    color: var(--text) ;
+
+}
+.input-field-verify input:placeholder
+{
+    font-size: 2rem;
+    color: var(--text) ;
+    font-family:aldhabi ;
+    opacity: 70%;
+}
+.verify-submit
+{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.verify-submit .submit1
+{
+    display: block;
+    height: 44px;
+    width: 70%;
+    border-radius: 23px;
+    margin: auto;
+    margin-bottom: 15px;
+    background: var(--background);
+}
+.verify-submit .submit1:hover
+{
+    border: solid .7px var(--text);
+    background: #713a2085;
+}
+.verify-submit .submit2
+{
+    display: block;
+    height: 44px;
+    width: 50%;
+    border-radius: 23px;
+    margin: auto;
+    background: #713a2085;
+}
+.verify-submit .submit2:hover
+{
+    border: solid .7px var(--text);
+    background: var(--background);
+}
+.verify-submit .submit-v a
+{
+    font-size: 3rem;
+    color: var(--text) ;
+    font-family:aldhabi ;
+    opacity: 90%;
+}
+.verify-submit .submit-v a:hover
+{
+    opacity: 100%;
+}
+.contener-verify .cup1
+{
+    display: block;
+    width: 220px;
+    height: 360px;
+    margin-top: 40px;
+
+}
+/* ////////////////////////////////////// */
+/* wellcome */
+.wellcome
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.wellcome .img
+{
+    display: block;
+    width: 55%;
+    height: 70%;
+    margin-top: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+
+}
+.wellcome .all-divs
+{
+    position: relative;
+    right: -269px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+}
+.wellcome .all-divs .div-1
+{
+    font-size: 5rem;
+    font-family:htl;
+    color: var(--text);
+    position: relative;
+    padding: 0px 20px 10px 0px;
+    width: 350px;
+    left:-250px ;top: 100px;
+}
+.div-3 , .div-2 , .div-4
+{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    left: -20px;top: 120px;
+    border: solid 1px var(--background);
+    height: 110px; width:350px ;
+    font-size: 4rem;
+    font-family:aldhabi;
+    color: rgba(255, 255, 255, 0.753);
+    line-height: 2.8rem;
+    text-align:center;
+}
+.wellcome .all-divs .div-2
+{
+    width: 490px;
+    padding: 25px;
+    position: relative;
+    left: -190px;top: 120px;
+}
+
+.wellcome .all-divs .div-3
+{
+    width:440px ;
+    padding: 20px 20px 0px 10px;
+    position: relative;
+    left: -140px;top: 100px;
+    background: #1d120c;
+
+    
+
+}
+.wellcome .all-divs .div-4
+{
+    width:440px ;
+    text-align: start;
+    padding: 30px 0px 20px 25px;
+    position: relative;
+    left: -70px;top: 84px;
+    background: #1d120c;
+
+}
+.wellcome .all-divs .div-5
+{
+    background: var(--background);
+    width: 90px;height: 50px;
+    color: white;
+    border-radius: 35px;
+    position: relative;
+    left:-150px ; top: 110px;
+}
+
+.wellcome .all-divs .div-5 a
+{
+    font-size: 4rem;
+    font-family:aldhabi;
+    color: rgba(255, 255, 255, 0.753);
+    text-align: center;
+    position: relative;
+    left:15px ; top: -8px;
+}
+.wellcome .all-divs .div-4 img
+{
+    /* display: inline-block; */
+    width: 90px;
+    position: absolute;
+    left: 52%;top: 50px;
+}
